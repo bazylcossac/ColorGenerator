@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="pl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="main.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap" rel="stylesheet">
+
+    <title>COLOR GENERATOR</title>
+</head>
+
+<body>
+    <div id="mainBox">
+        <header>
+            <h1>Generator palety kolorów</h1>
+        </header>
+        <section id="pickColor">
+            <div>
+                <input type="color" id="MyColor">
+            </div>
+            <div>
+                <form id="colorForm">
+                    <select id="selectedSheme">
+                    <option selected>Wybierz rodzaj</option>
+                    <option value="monochrome">Monochromatyczny</option>
+                    <option value="monochrome-dark">Monochromatyczny-ciemny</option>
+                    <option value="monochrome-light">Monochromatyczny-jasny</option>
+                    <option value="analogic">Analogowy</option>
+                    <option value="complement">Kolor dopełnienia</option>
+                    <option value="analogic-complement">Dopełnienia analogowy</option>
+                    <option value="triad">Kolor triady</option>
+                </select>
+                    <button type="submit">Generuj</button>
+                </form>
+
+            </div>
+        </section>
+        <main>
+            <div id="colorBox"></div>
+        </main>
+    </div>
+    <script src="index.js" type="module"></script>
+</body>
+
+</html>
